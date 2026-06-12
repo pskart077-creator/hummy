@@ -11,8 +11,11 @@ export const siteConfig = {
   contact: {
     whatsappNumber: "5511999999999",
     whatsappLabel: "(11) 99999-9999",
+    phone: "(11) 99999-9999",
     email: "contato@hummyoriginal.com.br",
     instagram: "https://instagram.com/hummyoriginal",
+    tiktok: "https://www.tiktok.com/@hummyoriginal",
+    youtube: "https://www.youtube.com/@hummyoriginal",
   },
   checkout: {
     externalCheckoutUrl: "",
