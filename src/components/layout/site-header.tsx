@@ -5,19 +5,12 @@ import { usePathname } from "next/navigation";
 import { navLinks } from "@/config/site";
 import { useCommerce } from "@/components/providers/commerce-provider";
 import { BrandLogo } from "@/components/ui/brand-logo";
-import {
-  CartIcon,
-  HeartIcon,
-  MenuIcon,
-  SearchIcon,
-  UserIcon,
-} from "@/components/ui/icons";
+import { MenuIcon } from "@/components/ui/icons";
 
 export function SiteHeader() {
   const pathname = usePathname();
 
-  const { cartCount, openCart, openMobileMenu, openSearch, wishlistIds } =
-    useCommerce();
+  const { openMobileMenu } = useCommerce();
 
   return (
     <header className="site-header">
@@ -54,47 +47,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="site-header__actions">
-          <button
-            aria-label="Buscar produtos"
-            className="site-header__icon-button"
-            type="button"
-            onClick={openSearch}
-          >
-            <SearchIcon />
-          </button>
-
-          <Link
-            aria-label="Minha conta"
-            className="site-header__icon-button"
-            href="/contato"
-          >
-            <UserIcon />
+          <Link className="site-header__buy-button" href="/produtos">
+            Comprar agora
           </Link>
-
-          <Link
-            aria-label={`Lista de desejos com ${wishlistIds.length} itens`}
-            className="site-header__icon-button site-header__counter-button"
-            href="/produtos"
-          >
-            <HeartIcon />
-
-            {wishlistIds.length > 0 && (
-              <span className="site-header__counter">{wishlistIds.length}</span>
-            )}
-          </Link>
-
-          <button
-            aria-label={`Carrinho com ${cartCount} itens`}
-            className="site-header__icon-button site-header__counter-button"
-            type="button"
-            onClick={openCart}
-          >
-            <CartIcon />
-
-            {cartCount > 0 && (
-              <span className="site-header__counter">{cartCount}</span>
-            )}
-          </button>
         </div>
       </div>
     </header>

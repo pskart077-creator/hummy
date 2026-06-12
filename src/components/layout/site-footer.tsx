@@ -25,11 +25,10 @@ const infoLinks = [
 ];
 
 const payments = [
-  { src: "/assets/payments/pix.svg", alt: "Pix" },
-  { src: "/assets/payments/visa.svg", alt: "Visa" },
-  { src: "/assets/payments/mastercard.svg", alt: "Mastercard" },
-  { src: "/assets/payments/elo.svg", alt: "Elo" },
-  { src: "/assets/payments/apple-pay.svg", alt: "Apple Pay" },
+  { src: "/assets/footer/Pix_(Brazil)_logo.svg", alt: "Pix" },
+  { src: "/assets/footer/Visa_Inc._logo_(2021–present).svg", alt: "Visa" },
+  { src: "/assets/footer/Mastercard_2019_logo.svg", alt: "Mastercard" },
+  { src: "/assets/footer/Elo_card_association_logo_-_black_text.svg", alt: "Elo" },
 ];
 
 export function SiteFooter() {
@@ -158,14 +157,6 @@ export function SiteFooter() {
             ))}
           </div>
 
-          <div className="site-footer__agency">
-            <Image
-              src="/assets/footer/alfinet.svg"
-              alt="Alfinet"
-              width={76}
-              height={24}
-            />
-          </div>
         </div>
       </div>
     </footer>

@@ -49,6 +49,14 @@ export function MobileMenu() {
             </Link>
           ))}
         </nav>
+
+        <Link
+          className="mobile-menu__buy-button"
+          href="/produtos"
+          onClick={closeMobileMenu}
+        >
+          Comprar agora
+        </Link>
       </aside>
     </div>
   );
