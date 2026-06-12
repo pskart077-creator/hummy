@@ -5,28 +5,28 @@ const homeCategoryShowcaseItems = [
   {
     title: "LIBIDO FEM",
     href: "/produtos/hummy-libido-fem",
-    image: "/assets/categories/libido-fem.png",
+    image: "/assets/products/3-libido-fem-img.png",
     imageAlt: "Hummy Libido Fem",
     tone: "pink",
   },
   {
     title: "MACA",
     href: "/produtos/hummy-maca",
-    image: "/assets/categories/maca.png",
+    image: "/assets/products/3-maca-img.png",
     imageAlt: "Hummy Maca",
     tone: "green",
   },
   {
     title: "TADALA",
     href: "/produtos/hummy-tadala",
-    image: "/assets/categories/tadala.png",
+    image: "/assets/products/3-tadala-img.png",
     imageAlt: "Hummy Tadala",
     tone: "blue",
   },
   {
     title: "KITS",
     href: "/categoria/kits",
-    image: "/assets/categories/kits.png",
+    image: "/assets/products/3-todos-img.png",
     imageAlt: "Kit Hummy Completo",
     tone: "cream",
   },
@@ -46,9 +46,9 @@ export function HomeCategoryShowcase() {
               <Image
                 alt={item.imageAlt}
                 className="home-category-showcase__image"
-                height={360}
+                height={1086}
                 src={item.image}
-                width={420}
+                width={1448}
               />
             </Link>
 

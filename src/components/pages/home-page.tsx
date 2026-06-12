@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { HomeCategoryShowcase } from "@/components/pages/home/home-category-showcase";
 import { HomeBlogPosts } from "@/components/pages/home/home-blog-posts";
+import { HomeCtaBanner } from "@/components/pages/home/home-cta-banner";
 import { HomeOfferShelf } from "@/components/pages/home/home-offer-shelf";
 import { HomeVideoStories } from "@/components/pages/home/home-video-stories";
 import { HeroImageBanner } from "@/components/sections/hero";
@@ -25,6 +26,7 @@ export function HomePage() {
       <HomeOfferShelf />
       <HomeCategoryShowcase />
       <HomeVideoStories />
+      <HomeCtaBanner />
       <HomeBlogPosts />
     </main>
   );

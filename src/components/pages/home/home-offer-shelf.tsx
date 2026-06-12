@@ -63,7 +63,7 @@ const homeOfferItems: HomeOfferItem[] = [
     oldPrice: 389.7,
     installments: "ou ate 6x R$ 41,65",
     quantity: "3 unidades",
-    images: ["/assets/products/kit-completo.png"],
+    images: ["/assets/products/3-todos-img.png"],
     tags: ["kit", "completo", "mais vendido"],
     savings: "Economize R$139,80",
   },
@@ -94,7 +94,7 @@ const homeOfferItems: HomeOfferItem[] = [
     oldPrice: 119.9,
     installments: "ou ate 3x R$ 29,97",
     quantity: "30 unidades",
-    images: ["/assets/products/hummy-libido-fem.png"],
+    images: ["/assets/products/6-libido-fem-img.png"],
     tags: ["feminino", "vitalidade", "bem-estar"],
   },
   {
@@ -124,7 +124,7 @@ const homeOfferItems: HomeOfferItem[] = [
     oldPrice: 109.9,
     installments: "ou ate 3x R$ 26,63",
     quantity: "30 unidades",
-    images: ["/assets/products/hummy-maca.png"],
+    images: ["/assets/products/6-maca-img.png"],
     tags: ["maca", "energia", "disposicao"],
   },
   {
@@ -154,7 +154,7 @@ const homeOfferItems: HomeOfferItem[] = [
     oldPrice: 139.9,
     installments: "ou ate 3x R$ 33,30",
     quantity: "30 unidades",
-    images: ["/assets/products/hummy-tadala.png"],
+    images: ["/assets/products/6-tadala-img.png"],
     tags: ["masculino", "performance", "confianca"],
   },
 ];
@@ -335,9 +335,9 @@ export function HomeOfferShelf() {
                     <Image
                       alt={item.name}
                       className="home-offer-card__image"
-                      height={360}
+                      height={1086}
                       src={item.images[0]}
-                      width={420}
+                      width={1448}
                     />
                   </Link>
                 </div>

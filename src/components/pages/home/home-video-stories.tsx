@@ -19,7 +19,7 @@ const homeVideoStories: HomeVideoStory[] = [
     video: "/assets/social/videos/libido-fem.mp4",
     handle: "@hummyoriginal",
     product: "Hummy Libido Fem - 30 unidades",
-    productImage: "/assets/products/hummy-libido-fem.png",
+    productImage: "/assets/icon-img/libido-img.png",
   },
   {
     id: "maca",
@@ -27,7 +27,7 @@ const homeVideoStories: HomeVideoStory[] = [
     video: "/assets/social/videos/maca.mp4",
     handle: "@hummyrotina",
     product: "Hummy Maca - 30 unidades",
-    productImage: "/assets/products/hummy-maca.png",
+    productImage: "/assets/icon-img/maca-img.png",
   },
   {
     id: "tadala",
@@ -35,7 +35,7 @@ const homeVideoStories: HomeVideoStory[] = [
     video: "/assets/social/videos/tadala.mp4",
     handle: "@hummyvitalidade",
     product: "Hummy Tadala - 30 unidades",
-    productImage: "/assets/products/hummy-tadala.png",
+    productImage: "/assets/icon-img/tadala-img.png",
   },
   {
     id: "kit",
@@ -43,7 +43,7 @@ const homeVideoStories: HomeVideoStory[] = [
     video: "/assets/social/videos/kit-completo.mp4",
     handle: "@hummykits",
     product: "Kit Hummy Completo",
-    productImage: "/assets/products/kit-completo.png",
+    productImage: "/assets/icon-img/todos-img.png",
   },
 ];
 
