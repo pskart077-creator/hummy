@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductDetails } from "@/components/commerce/product-details";
 import { ProductGallery } from "@/components/commerce/product-gallery";
-import { ProductInfoBlocks } from "@/components/commerce/product-info-blocks";
+import { ProductProofSection } from "@/components/commerce/product-proof-section";
+import { ProductReviews } from "@/components/commerce/product-reviews";
 import { getItemBySlug, shopItems } from "@/data/products";
 
 export type ProductPageProps = {
@@ -46,11 +48,21 @@ export async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <main>
+      <nav className="product-breadcrumb" aria-label="Caminho do produto">
+        <div className="product-breadcrumb__inner">
+          <Link href="/">Início</Link>
+          <span aria-hidden="true">&gt;</span>
+          <Link href="/produtos">Produtos</Link>
+          <span aria-hidden="true">&gt;</span>
+          <strong>{item.name}</strong>
+        </div>
+      </nav>
       <section className="product-page">
         <ProductGallery item={item} />
         <ProductDetails item={item} />
       </section>
-      <ProductInfoBlocks item={item} />
+      <ProductProofSection item={item} />
+      <ProductReviews item={item} />
     </main>
   );
 }

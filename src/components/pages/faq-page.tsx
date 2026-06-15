@@ -5,38 +5,63 @@ import { PageHero } from "@/components/sections/page-hero";
 export const metadata: Metadata = {
   title: "Perguntas frequentes",
   description:
-    "Tire dúvidas sobre compra, entrega, consumo e atendimento da Hummy Original.",
+    "Tire duvidas sobre compra, entrega, consumo e atendimento da Hummy Original.",
 };
 
 const faqItems: FaqItem[] = [
   {
     question: "Como devo consumir os produtos?",
     answer:
-      "Siga sempre as orientações do rótulo do produto. Em caso de dúvidas, consulte um profissional de saúde.",
+      "Siga sempre as orientacoes do rotulo do produto. Em caso de duvidas, consulte um profissional de saude.",
   },
   {
-    question: "Quantas unidades vêm no pote?",
-    answer: "Os produtos principais vêm com 30 unidades.",
+    question: "Quantas unidades vem no pote?",
+    answer: "Os produtos principais vem com 30 unidades.",
   },
   {
     question: "A Hummy faz promessas de resultado?",
     answer:
-      "Não. A comunicação da Hummy é focada em bem-estar, vitalidade, disposição e rotina, sem promessas médicas.",
+      "Nao. A comunicacao da Hummy e focada em bem-estar, vitalidade, disposicao e rotina, sem promessas medicas.",
   },
   {
-    question: "Posso comprar pelo WhatsApp?",
+    question: "Posso consultar pelo WhatsApp?",
     answer:
-      "Sim. Você pode montar seu carrinho e finalizar com uma mensagem automática pelo WhatsApp.",
+      "Sim. Voce pode escolher o produto no site e consultar o preco direto pelo WhatsApp oficial da Hummy.",
   },
   {
-    question: "Tem frete grátis?",
+    question: "Tem frete gratis?",
     answer:
-      "Campanhas de frete grátis podem estar disponíveis, como frete grátis acima de R$199 por tempo limitado.",
+      "As condicoes de envio podem mudar por campanha. Consulte o atendimento oficial para confirmar a condicao atual.",
   },
   {
     question: "Como acompanho meu pedido?",
     answer:
-      "Use a página Rastrear Pedido ou fale com nosso atendimento com o número do pedido.",
+      "Use a pagina Rastrear Pedido ou fale com nosso atendimento com o numero do pedido.",
+  },
+  {
+    question: "Os produtos Hummy sao medicamentos?",
+    answer:
+      "Nao. Eles sao produtos de bem-estar e nao substituem acompanhamento medico ou orientacao profissional.",
+  },
+  {
+    question: "Posso combinar mais de um Hummy?",
+    answer:
+      "A combinacao depende da sua rotina e das orientacoes do rotulo. Em caso de duvida, fale com um profissional de saude.",
+  },
+  {
+    question: "Quem nao deve consumir?",
+    answer:
+      "Gestantes, lactantes, pessoas com condicoes pre-existentes ou em uso de medicamentos devem consultar um profissional de saude antes do consumo.",
+  },
+  {
+    question: "Como funciona a consulta de preco?",
+    answer:
+      "Voce abre o produto desejado e toca em Ver preco para falar com o WhatsApp oficial da Hummy.",
+  },
+  {
+    question: "Qual e o canal oficial da Hummy?",
+    answer:
+      "O dominio oficial e hummy.com.br e o atendimento principal acontece pelo WhatsApp informado no site.",
   },
 ];
 
@@ -46,9 +71,13 @@ export function FAQPage() {
       <PageHero
         eyebrow="FAQ"
         title="Perguntas frequentes"
-        description="Tudo que você precisa saber antes de escolher seu Hummy."
+        description="Tudo que voce precisa saber antes de escolher seu Hummy."
+        imageAlt="Atendimento Hummy no WhatsApp"
+        imageDesktop="/assets/cta/cta.png"
+        imageTablet="/assets/cta/cta.png"
+        imageMobile="/assets/cta/cta-phone.png"
       />
-      <FAQ items={faqItems} title="Dúvidas principais" />
+      <FAQ items={faqItems} title="Perguntas frequentes" />
     </main>
   );
 }

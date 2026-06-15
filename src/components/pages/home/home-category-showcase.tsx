@@ -51,10 +51,6 @@ export function HomeCategoryShowcase() {
                 width={1448}
               />
             </Link>
-
-            <Link className="home-category-showcase__button" href={item.href}>
-              Ver Mais
-            </Link>
           </article>
         ))}
       </div>

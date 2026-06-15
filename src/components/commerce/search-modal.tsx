@@ -6,7 +6,6 @@ import { useMemo, useState } from "react";
 import { useCommerce } from "@/components/providers/commerce-provider";
 import { CloseIcon, SearchIcon } from "@/components/ui/icons";
 import { shopItems } from "@/data/products";
-import { formatCurrency } from "@/lib/format";
 
 export function SearchModal() {
   const [query, setQuery] = useState("");
@@ -90,7 +89,7 @@ export function SearchModal() {
                 <strong>{item.name}</strong>
                 <span>{item.category}</span>
               </div>
-              <em>{formatCurrency(item.price)}</em>
+              <em>Ver preço</em>
             </Link>
           ))}
           {results.length === 0 && (

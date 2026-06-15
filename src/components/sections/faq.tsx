@@ -11,10 +11,11 @@ type FAQProps = {
 export function FAQ({ items, title = "Perguntas frequentes" }: FAQProps) {
   return (
     <section className="faq-section">
-      <div className="section-heading">
-        <span>FAQ</span>
+      <div className="faq-section__heading">
         <h2>{title}</h2>
+        <span aria-hidden="true">~~~</span>
       </div>
+
       <div className="faq-section__list">
         {items.map((item) => (
           <details className="faq-item" key={item.question}>

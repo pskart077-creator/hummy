@@ -3,16 +3,16 @@ export const siteConfig = {
   title: "Hummy Original | Desejo, energia e vitalidade",
   description:
     "Conheça Hummy Original, produtos para vitalidade, disposição, confiança e bem-estar em uma rotina simples.",
-  url: "https://hummyoriginal.com.br",
+  url: "https://hummy.com.br",
   offer: {
-    title: "FRETE GRÁTIS ACIMA DE R$199",
-    subtitle: "POR TEMPO LIMITADO",
+    message:
+      "🔥 COMPRE HUMMY ORIGINAL PELO SITE | KITS EXCLUSIVOS | MAIS DESEJO, ENERGIA E CONFIANÇA | ENVIO RÁPIDO",
   },
   contact: {
-    whatsappNumber: "5511999999999",
-    whatsappLabel: "(11) 99999-9999",
-    phone: "(11) 99999-9999",
-    email: "contato@hummyoriginal.com.br",
+    whatsappNumber: "5511952130284",
+    whatsappLabel: "(11) 95213-0284",
+    phone: "(11) 95213-0284",
+    email: "contato@hummy.com.br",
     instagram: "https://instagram.com/hummyoriginal",
     tiktok: "https://www.tiktok.com/@hummyoriginal",
     youtube: "https://www.youtube.com/@hummyoriginal",

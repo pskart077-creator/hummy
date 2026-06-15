@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts } from "@/components/pages/blog/blog-posts";
+import { blogPosts } from "@/components/pages/blog/posts";
 
 export function HomeBlogPosts() {
   return (

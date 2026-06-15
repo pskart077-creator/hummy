@@ -20,24 +20,6 @@ export function UserIcon({ className = "icon" }: IconProps) {
   );
 }
 
-export function HeartIcon({ className = "icon" }: IconProps) {
-  return (
-    <svg aria-hidden="true" className={className} viewBox="0 0 24 24">
-      <path d="M20.8 5.7a5.5 5.5 0 0 0-7.8 0L12 6.8l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 22l8.8-8.5a5.5 5.5 0 0 0 0-7.8Z" />
-    </svg>
-  );
-}
-
-export function CartIcon({ className = "icon" }: IconProps) {
-  return (
-    <svg aria-hidden="true" className={className} viewBox="0 0 24 24">
-      <path d="M6 6h15l-2 9H8L6 3H3" />
-      <circle cx="9" cy="21" r="1" />
-      <circle cx="18" cy="21" r="1" />
-    </svg>
-  );
-}
-
 export function MenuIcon({ className = "icon" }: IconProps) {
   return (
     <svg aria-hidden="true" className={className} viewBox="0 0 24 24">

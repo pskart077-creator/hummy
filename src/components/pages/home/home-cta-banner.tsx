@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function HomeCtaBanner() {
@@ -6,13 +5,19 @@ export function HomeCtaBanner() {
     <section className="home-cta-banner" aria-label="Escolha seu Hummy favorito">
       <div className="home-cta-banner__inner">
         <Link className="home-cta-banner__link" href="/produtos">
-          <Image
-            alt="Escolha seu Hummy favorito. Confira nossas formulas e encontre o produto ideal para voce."
-            className="home-cta-banner__image"
-            height={724}
-            src="/assets/cta/cta.png"
-            width={2172}
-          />
+          <picture className="home-cta-banner__picture">
+            <source
+              media="(max-width: 640px)"
+              srcSet="/assets/cta/cta-phone.png"
+            />
+            <img
+              alt="Escolha seu Hummy favorito. Confira nossas formulas e encontre o produto ideal para voce."
+              className="home-cta-banner__image"
+              height={724}
+              src="/assets/cta/cta.png"
+              width={2172}
+            />
+          </picture>
         </Link>
       </div>
     </section>

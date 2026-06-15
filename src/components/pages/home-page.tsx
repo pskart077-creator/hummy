@@ -3,6 +3,7 @@ import { HomeCategoryShowcase } from "@/components/pages/home/home-category-show
 import { HomeBlogPosts } from "@/components/pages/home/home-blog-posts";
 import { HomeCtaBanner } from "@/components/pages/home/home-cta-banner";
 import { HomeOfferShelf } from "@/components/pages/home/home-offer-shelf";
+import { HomeReviews } from "@/components/pages/home/home-reviews";
 import { HomeVideoStories } from "@/components/pages/home/home-video-stories";
 import { HeroImageBanner } from "@/components/sections/hero";
 
@@ -20,7 +21,7 @@ export function HomePage() {
         desktopSrc="/assets/hero/hero-desktop.jpeg"
         tabletSrc="/assets/hero/hero-tablet.jpeg"
         mobileSrc="/assets/hero/hero-mobile.jpeg"
-        alt="Comprar Hummy Libido Fem"
+        alt="Hummy Libido Fem"
       />
 
       <HomeOfferShelf />
@@ -28,6 +29,7 @@ export function HomePage() {
       <HomeVideoStories />
       <HomeCtaBanner />
       <HomeBlogPosts />
+      <HomeReviews />
     </main>
   );
 }

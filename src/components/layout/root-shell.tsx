@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { CartDrawer } from "@/components/commerce/cart-drawer";
 import { SearchModal } from "@/components/commerce/search-modal";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -19,7 +18,6 @@ export function RootShell({ children }: RootShellProps) {
       <MobileMenu />
       <div className="app-content">{children}</div>
       <SiteFooter />
-      <CartDrawer />
       <SearchModal />
     </CommerceProvider>
   );

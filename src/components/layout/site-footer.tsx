@@ -5,23 +5,25 @@ import { siteConfig } from "@/config/site";
 import { BrandLogo } from "@/components/ui/brand-logo";
 
 const productLinks = [
-  { href: "/produtos", label: "Hair Care" },
-  { href: "/categoria/cabelo-pele", label: "Cabelo & Pele" },
-  { href: "/categoria/metabolismo", label: "Metabolismo" },
-  { href: "/categoria/sono-imunidade", label: "Sono & Imunidade" },
+  { href: "/produtos", label: "Todos os produtos" },
+  { href: "/produtos/hummy-libido-fem", label: "Hummy Libido Fem" },
+  { href: "/produtos/hummy-maca", label: "Hummy Maçã" },
+  { href: "/produtos/hummy-tadala", label: "Hummy Tadala" },
+  { href: "/produtos/kit-hummy-completo", label: "Kit Hummy Completo" },
 ];
 
-const partnerLinks = [
-  { href: "/seja-influencer", label: "Seja Uma Influencer" },
-  { href: "/seja-revendedor", label: "Seja Um Revendedor" },
+const categoryLinks = [
+  { href: "/categoria/para-ela", label: "Para Ela" },
+  { href: "/categoria/para-ele", label: "Para Ele" },
+  { href: "/categoria/vitalidade", label: "Vitalidade" },
+  { href: "/categoria/kits", label: "Kits" },
 ];
 
-const infoLinks = [
-  { href: "/perguntas-frequentes", label: "Perguntas Frequentes" },
-  { href: "/politica-de-privacidade", label: "Políticas De Privacidade" },
-  { href: "/termos-de-uso", label: "Termos E Condições" },
-  { href: "/garantia", label: "Garantia Hummy" },
-  { href: "/regulamento", label: "Regulamento: Cartela Premiada" },
+const helpLinks = [
+  { href: "/blog/como-escolher-seu-hummy", label: "Blog da Hummy" },
+  { href: "/perguntas-frequentes", label: "Perguntas frequentes" },
+  { href: "/rastrear-pedido", label: "Rastrear pedido" },
+  { href: "/contato", label: "Contato" },
 ];
 
 const payments = [
@@ -43,31 +45,31 @@ export function SiteFooter() {
 
             <div className="site-footer__socials" aria-label="Redes sociais">
               <a
+                aria-label="Instagram"
                 className="site-footer__social"
                 href={siteConfig.contact.instagram}
-                target="_blank"
                 rel="noreferrer"
-                aria-label="Instagram"
+                target="_blank"
               >
                 <FaInstagram />
               </a>
 
               <a
-                className="site-footer__social"
-                href={siteConfig.contact.tiktok || "#"}
-                target="_blank"
-                rel="noreferrer"
                 aria-label="TikTok"
+                className="site-footer__social"
+                href={siteConfig.contact.tiktok}
+                rel="noreferrer"
+                target="_blank"
               >
                 <FaTiktok />
               </a>
 
               <a
-                className="site-footer__social"
-                href={siteConfig.contact.youtube || "#"}
-                target="_blank"
-                rel="noreferrer"
                 aria-label="YouTube"
+                className="site-footer__social"
+                href={siteConfig.contact.youtube}
+                rel="noreferrer"
+                target="_blank"
               >
                 <FaYoutube />
               </a>
@@ -87,10 +89,10 @@ export function SiteFooter() {
           </div>
 
           <div className="site-footer__column">
-            <h2 className="site-footer__title">FAÇA PARTE</h2>
+            <h2 className="site-footer__title">CATEGORIAS</h2>
 
             <nav className="site-footer__nav">
-              {partnerLinks.map((item) => (
+              {categoryLinks.map((item) => (
                 <Link className="site-footer__link" href={item.href} key={item.href}>
                   {item.label}
                 </Link>
@@ -99,10 +101,10 @@ export function SiteFooter() {
           </div>
 
           <div className="site-footer__column">
-            <h2 className="site-footer__title">INFORMAÇÃO</h2>
+            <h2 className="site-footer__title">AJUDA</h2>
 
             <nav className="site-footer__nav">
-              {infoLinks.map((item) => (
+              {helpLinks.map((item) => (
                 <Link className="site-footer__link" href={item.href} key={item.href}>
                   {item.label}
                 </Link>
@@ -114,17 +116,14 @@ export function SiteFooter() {
             <h2 className="site-footer__title">SUPORTE</h2>
 
             <div className="site-footer__nav">
-              <p className="site-footer__text">
-                SAC: {siteConfig.contact.phone} - Seg À Sex
-              </p>
-
-              <p className="site-footer__text">(08:00 Às 17:00)</p>
+              <p className="site-footer__text">SAC: {siteConfig.contact.phone}</p>
+              <p className="site-footer__text">Segunda a sexta, 08:00 às 17:00</p>
 
               <a
                 className="site-footer__link"
                 href={whatsappUrl}
-                target="_blank"
                 rel="noreferrer"
+                target="_blank"
               >
                 WhatsApp: {siteConfig.contact.whatsappLabel}
               </a>
@@ -138,8 +137,8 @@ export function SiteFooter() {
 
         <div className="site-footer__bottom">
           <p className="site-footer__copyright">
-            © 2026 Hummy - Todos Os Direitos Reservados.{" "}
-            <Link href="/termos-de-uso">Termos e Condições</Link>{" "}
+            © 2026 Hummy Original - Todos os direitos reservados.{" "}
+            <Link href="/termos-de-uso">Termos de Uso</Link>{" "}
             <span>|</span>{" "}
             <Link href="/politica-de-privacidade">Política de Privacidade</Link>
           </p>
@@ -148,15 +147,14 @@ export function SiteFooter() {
             {payments.map((payment) => (
               <span className="site-footer__payment" key={payment.alt}>
                 <Image
-                  src={payment.src}
                   alt={payment.alt}
-                  width={52}
                   height={32}
+                  src={payment.src}
+                  width={52}
                 />
               </span>
             ))}
           </div>
-
         </div>
       </div>
     </footer>

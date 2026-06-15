@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ProductGrid } from "@/components/commerce/product-grid";
+import { CatalogSection } from "@/components/commerce/catalog-section";
 import { PageHero } from "@/components/sections/page-hero";
 import { shopItems } from "@/data/products";
 
@@ -16,10 +16,16 @@ export function ProductsPage() {
         eyebrow="Produtos"
         title="Todos os Hummys"
         description="Produtos e kits pensados para uma rotina mais leve, prática e confiante."
+        imageAlt="Linha de produtos Hummy Original"
+        imageDesktop="/assets/products/3-todos-img.png"
+        imageTablet="/assets/products/3-todos-img.png"
+        imageMobile="/assets/products/3-todos-img.png"
       />
-      <section className="products-section products-section--page">
-        <ProductGrid items={shopItems} />
-      </section>
+      <CatalogSection
+        eyebrow="Loja Hummy"
+        title="Produtos Hummy Original"
+        items={shopItems}
+      />
     </main>
   );
 }

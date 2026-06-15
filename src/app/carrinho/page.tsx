@@ -1,7 +1,5 @@
-import { CartRoutePage } from "@/components/pages/cart-route-page";
-
-export { metadata } from "@/components/pages/cart-route-page";
+import { redirect } from "next/navigation";
 
 export default function Page() {
-  return <CartRoutePage />;
+  redirect("/produtos");
 }

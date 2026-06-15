@@ -12,19 +12,23 @@ export function TrackingPage() {
       <PageHero
         eyebrow="Pedido"
         title="Rastrear pedido"
-        description="Informe seu código de rastreio ou número do pedido para acompanhar a entrega."
+        description="Informe seu codigo de rastreio ou numero do pedido para acompanhar a entrega."
+        imageAlt="Kit Hummy Original"
+        imageDesktop="/assets/social/story-kit.jpg"
+        imageTablet="/assets/social/story-kit.jpg"
+        imageMobile="/assets/social/story-kit.jpg"
       />
       <section className="simple-page">
         <form className="tracking-form">
           <label>
-            Código de rastreio ou pedido
+            Codigo de rastreio ou pedido
             <input placeholder="Ex: HUMMY12345" type="text" />
           </label>
           <button type="submit">Consultar pedido</button>
         </form>
         <p>
-          Caso ainda não tenha recebido o código, fale com nosso atendimento pelo
-          WhatsApp informado no rodapé.
+          Caso ainda nao tenha recebido o codigo, fale com nosso atendimento pelo
+          WhatsApp informado no rodape.
         </p>
       </section>
     </main>

@@ -1,5 +1,4 @@
 import { siteConfig } from "@/config/site";
-import type { CartLine } from "@/components/providers/commerce-provider";
 
 export function buildWhatsAppUrl(message: string) {
   const encodedMessage = encodeURIComponent(message);
@@ -16,19 +15,5 @@ export function buildCheckoutUrl(message: string) {
 }
 
 export function buildProductWhatsAppMessage(productName: string) {
-  return `Olá, quero comprar o produto ${productName} da Hummy Original. Pode me ajudar?`;
-}
-
-export function buildCartWhatsAppMessage(items: CartLine[]) {
-  const lines = items.map(
-    (line) =>
-      `- ${line.quantity}x ${line.item.name} (${line.item.installments})`,
-  );
-
-  return [
-    "Olá, quero finalizar meu pedido Hummy Original:",
-    ...lines,
-    "",
-    "Pode me enviar o link de pagamento e o prazo de entrega?",
-  ].join("\n");
+  return `Olá, quero ver o preço do produto ${productName} da Hummy Original. Pode me ajudar?`;
 }

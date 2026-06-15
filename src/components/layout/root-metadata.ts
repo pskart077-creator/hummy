@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hummyoriginal.com.br"),
+  metadataBase: new URL("https://hummy.com.br"),
   title: {
     default: "Hummy Original | Desejo, energia e vitalidade",
     template: "%s | Hummy Original",

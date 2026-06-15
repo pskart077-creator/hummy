@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts, getBlogPostBySlug } from "@/components/pages/blog/blog-posts";
+import { blogPosts, getBlogPostBySlug } from "@/components/pages/blog/posts";
 
 export type BlogPostPageProps = {
   params: Promise<{
@@ -43,38 +42,26 @@ export async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
+  const currentIndex = blogPosts.findIndex((item) => item.slug === post.slug);
+  const previousPost =
+    blogPosts[(currentIndex - 1 + blogPosts.length) % blogPosts.length];
+  const nextPost = blogPosts[(currentIndex + 1) % blogPosts.length];
+
   return (
     <main>
       <article className="blog-post-page">
-        <header className="blog-post-page__header">
-          <Link className="blog-post-page__back" href="/#blog">
-            Voltar para o blog
-          </Link>
-          <span>{post.category}</span>
-          <h1>{post.title}</h1>
-          <p>{post.excerpt}</p>
-          <div className="blog-post-page__meta">
-            <strong>{post.date}</strong>
-            <small>{post.readTime} de leitura</small>
-          </div>
-        </header>
+        <div className="blog-post-page__inner">
+          <header className="blog-post-page__header">
+            <span>{post.category}</span>
+            <h1>{post.title}</h1>
+          </header>
 
-        <Image
-          alt={post.imageAlt}
-          className="blog-post-page__image"
-          height={620}
-          priority
-          src={post.image}
-          width={1100}
-        />
+          <div className="blog-post-page__content">{post.content}</div>
 
-        <div className="blog-post-page__content">
-          {post.sections.map((section) => (
-            <section key={section.title}>
-              <h2>{section.title}</h2>
-              <p>{section.body}</p>
-            </section>
-          ))}
+          <nav className="blog-post-page__pagination" aria-label="Navegacao do blog">
+            <Link href={`/blog/${previousPost.slug}`}>Artigo anterior</Link>
+            <Link href={`/blog/${nextPost.slug}`}>Artigo seguinte</Link>
+          </nav>
         </div>
       </article>
     </main>

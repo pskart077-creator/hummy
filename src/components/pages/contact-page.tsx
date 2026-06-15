@@ -14,23 +14,27 @@ export function ContactPage() {
       <PageHero
         eyebrow="Atendimento"
         title="Fale com a Hummy"
-        description="Dúvidas sobre produto, pedido, entrega ou escolha do melhor Hummy para sua rotina."
+        description="Duvidas sobre produto, pedido, entrega ou escolha do melhor Hummy para sua rotina."
+        imageAlt="Atendimento Hummy Original"
+        imageDesktop="/assets/social/story-libido-fem.jpg"
+        imageTablet="/assets/social/story-libido-fem.jpg"
+        imageMobile="/assets/social/story-libido-fem.jpg"
       />
       <section className="contact-grid">
         <a href={`https://wa.me/${siteConfig.contact.whatsappNumber}`}>
           <span>WhatsApp</span>
           <strong>{siteConfig.contact.whatsappLabel}</strong>
-          <p>Atendimento rápido para compra, pedido e suporte.</p>
+          <p>Atendimento rapido para compra, pedido e suporte.</p>
         </a>
         <a href={`mailto:${siteConfig.contact.email}`}>
           <span>E-mail</span>
           <strong>{siteConfig.contact.email}</strong>
-          <p>Use para dúvidas institucionais e parcerias.</p>
+          <p>Use para duvidas institucionais e parcerias.</p>
         </a>
         <a href={siteConfig.contact.instagram}>
           <span>Instagram</span>
           <strong>@hummyoriginal</strong>
-          <p>Acompanhe novidades, campanhas e conteúdo da marca.</p>
+          <p>Acompanhe novidades, campanhas e conteudo da marca.</p>
         </a>
       </section>
     </main>
