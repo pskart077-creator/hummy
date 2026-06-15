@@ -10,7 +10,7 @@ import { HeroImageBanner } from "@/components/sections/hero";
 export const metadata: Metadata = {
   title: "Hummy Original | Desejo, energia e vitalidade",
   description:
-    "Conheca Hummy Original, produtos para vitalidade, disposicao, confianca e bem-estar em uma rotina simples.",
+    "Conheça Hummy Original, produtos para vitalidade, disposição, confiança e bem-estar em uma rotina simples.",
 };
 
 export function HomePage() {

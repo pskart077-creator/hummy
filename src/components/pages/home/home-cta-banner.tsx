@@ -11,7 +11,7 @@ export function HomeCtaBanner() {
               srcSet="/assets/cta/cta-phone.png"
             />
             <img
-              alt="Escolha seu Hummy favorito. Confira nossas formulas e encontre o produto ideal para voce."
+        alt="Escolha seu Hummy favorito. Confira nossas fórmulas e encontre o produto ideal para você."
               className="home-cta-banner__image"
               height={724}
               src="/assets/cta/cta.png"

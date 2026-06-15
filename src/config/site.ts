@@ -30,5 +30,5 @@ export const navLinks = [
   { href: "/categoria/para-ele", label: "Para Ele" },
   { href: "/categoria/vitalidade", label: "Vitalidade" },
   { href: "/categoria/kits", label: "Kits" },
-  { href: "/rastrear-pedido", label: "Rastrear Pedido" },
+  { href: "https://rastreia.me/", label: "Rastrear Pedido", target: "_blank" },
 ];

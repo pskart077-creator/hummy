@@ -50,27 +50,27 @@ const productReviewsBySlug: Record<string, ProductReview[]> = {
   "hummy-maca": [
     {
       author: "Larissa P.",
-      text: "A Maçã virou meu cuidado do dia. Gostei do sabor e da praticidade.",
-      mediaAlt: "Hummy Maçã recebido",
+      text: "A Maca virou meu cuidado do dia. Gostei do sabor e da praticidade.",
+      mediaAlt: "Hummy Maca recebido",
       mediaSrc: "/assets/products/3-maca-img.png",
     },
     {
       author: "Bianca S.",
       text: "Chegou rápido e veio tudo certinho. Vou comprar novamente.",
-      mediaAlt: "Potes Hummy Maçã",
+      mediaAlt: "Potes Hummy Maca",
       mediaSrc: "/assets/products/6-maca-img.png",
       mediaType: "video",
     },
     {
       author: "Renata C.",
       text: "Boa escolha para incluir na rotina sem complicar.",
-      mediaAlt: "Hummy Maçã",
+      mediaAlt: "Hummy Maca",
       mediaSrc: "/assets/social/story-maca.jpg",
     },
     {
       author: "Jaque L.",
       text: "Gostei muito. Já entrou no meu estoque de autocuidado.",
-      mediaAlt: "Categoria Maçã",
+      mediaAlt: "Categoria Maca",
       mediaSrc: "/assets/categories/maca.png",
     },
   ],
@@ -90,7 +90,7 @@ const productReviewsBySlug: Record<string, ProductReview[]> = {
     },
     {
       author: "Duda S.",
-      text: "Gostei da proposta. Direto ao ponto e facil de usar.",
+      text: "Gostei da proposta. Direto ao ponto e fácil de usar.",
       mediaAlt: "Hummy Tadala",
       mediaSrc: "/assets/social/story-tadala.jpg",
     },

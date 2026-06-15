@@ -44,6 +44,8 @@ export function MobileMenu() {
               href={item.href}
               key={item.href}
               onClick={closeMobileMenu}
+              rel={item.target === "_blank" ? "noreferrer" : undefined}
+              target={item.target}
             >
               {item.label}
             </Link>

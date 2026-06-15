@@ -7,7 +7,7 @@ import { BrandLogo } from "@/components/ui/brand-logo";
 const productLinks = [
   { href: "/produtos", label: "Todos os produtos" },
   { href: "/produtos/hummy-libido-fem", label: "Hummy Libido Fem" },
-  { href: "/produtos/hummy-maca", label: "Hummy Maçã" },
+  { href: "/produtos/hummy-maca", label: "Hummy Maca" },
   { href: "/produtos/hummy-tadala", label: "Hummy Tadala" },
   { href: "/produtos/kit-hummy-completo", label: "Kit Hummy Completo" },
 ];
@@ -22,7 +22,7 @@ const categoryLinks = [
 const helpLinks = [
   { href: "/blog/como-escolher-seu-hummy", label: "Blog da Hummy" },
   { href: "/perguntas-frequentes", label: "Perguntas frequentes" },
-  { href: "/rastrear-pedido", label: "Rastrear pedido" },
+  { href: "https://rastreia.me/", label: "Rastrear pedido", target: "_blank" },
   { href: "/contato", label: "Contato" },
 ];
 
@@ -105,7 +105,13 @@ export function SiteFooter() {
 
             <nav className="site-footer__nav">
               {helpLinks.map((item) => (
-                <Link className="site-footer__link" href={item.href} key={item.href}>
+                <Link
+                  className="site-footer__link"
+                  href={item.href}
+                  key={item.href}
+                  rel={item.target === "_blank" ? "noreferrer" : undefined}
+                  target={item.target}
+                >
                   {item.label}
                 </Link>
               ))}

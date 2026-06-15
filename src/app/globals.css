@@ -3469,6 +3469,13 @@ img {
   margin-bottom: clamp(3rem, 6vw, 5.2rem);
 }
 
+.product-proof__benefits[data-count="3"] {
+  max-width: 58rem;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .product-proof__benefit {
   display: grid;
   justify-items: center;
@@ -3588,7 +3595,7 @@ img {
 .product-reviews__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1.2rem;
 }
@@ -3612,7 +3619,6 @@ img {
   font-weight: 500;
 }
 
-.product-reviews__cta,
 .product-reviews__more {
   min-height: 2.45rem;
   display: inline-flex;
@@ -4022,12 +4028,12 @@ img {
   }
 
   .product-page {
-    padding: 1.8rem 0 3rem;
-    gap: 1.75rem;
+    padding: 1.4rem 0 3rem;
+    gap: 2.25rem;
   }
 
   .product-gallery__main {
-    min-height: 24rem;
+    min-height: 20rem;
     border-radius: 1.2rem;
   }
 
@@ -4037,17 +4043,35 @@ img {
   }
 
   .product-gallery__image {
-    height: 22rem;
+    height: 18.5rem;
   }
 
   .product-gallery__thumbs {
+    margin-top: 0.8rem;
+    margin-bottom: 0.7rem;
     justify-content: flex-start;
     overflow-x: auto;
     padding-bottom: 0.35rem;
   }
 
   .product-gallery__thumb-button {
-    min-width: 5.6rem;
+    min-width: 5rem;
+    width: 5rem;
+    height: 4rem;
+  }
+
+  .product-gallery__arrow {
+    flex: 0 0 2rem;
+  }
+
+  .product-details {
+    padding-top: 0.35rem;
+  }
+
+  .product-details__rating {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
   }
 
   .product-details__title,
@@ -4064,6 +4088,7 @@ img {
   }
 
   .product-proof__benefits,
+  .product-proof__benefits[data-count="3"],
   .product-proof__cards,
   .product-review-card {
     grid-template-columns: 1fr;
@@ -4074,8 +4099,9 @@ img {
   }
 
   .product-reviews__top {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .product-review-card__media {

@@ -39,6 +39,8 @@ export function SiteHeader() {
                 }`}
                 href={item.href}
                 key={item.href}
+                rel={item.target === "_blank" ? "noreferrer" : undefined}
+                target={item.target}
               >
                 {item.label}
               </Link>
